@@ -8,7 +8,7 @@ namespace task_11
         {
             Console.Write("Enter N: ");
             decimal n = Int32.Parse(Console.ReadLine());
-            int zeroes = 0;
+            int zeros = 0;
 
             for (int i = (int)(n - 1); i > 0; i--)
                 n *= i;
@@ -18,10 +18,10 @@ namespace task_11
             do
             {
                 n /= 10;
-                zeroes++;
+                zeros++;
             } while (n % 10 == 0);
 
-            Console.WriteLine("with {0} zeroes.", zeroes);
+            Console.WriteLine("with {0} zeros.", zeros);
         }
     }
 }
